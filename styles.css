@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0E3D59;
+    color: #ffffff;
+    text-align: center;
+}
+
+.gradient-section {
+    background: linear-gradient(to bottom, #0E3D59, #0B2740, #081826); /* Gradiente da primeira seção */
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-message h1 {
+    margin: 20px;
+    font-size: 2em;
+    color: #ff0000; /* Vermelho */
+}
+
+.main-panel {
+    margin-top: 30px;
+}
+
+.panel-button {
+    background-color: #ff0000; /* Vermelho */
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.panel-button:hover {
+    background-color: #cc0000; /* Vermelho escuro */
+}
+
+.image-container {
+    margin-top: 30px;
+}
+
+.image-container img {
+    max-width: 200px; /* Ajuste o tamanho da imagem */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: translateY(-5px) rotate(3deg);
+}
+
+/* Estilos para as bolhas */
+.bubbles {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: rise 6s infinite ease-in;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    animation-duration: 8s;
+    left: 20%;
+}
+
+.bubble:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 10s;
+    left: 40%;
+}
+
+.bubble:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    animation-duration: 7s;
+    left: 60%;
+}
+
+.bubble:nth-child(5) {
+    width: 25px;
+    height: 25px;
+    animation-duration: 9s;
+    left: 80%;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-600px);
+        opacity: 0;
+    }
+}
+
+/* Estilização da galeria */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1); /* Zoom leve ao passar o mouse */
+}
+
+/* Estilização do formulário de upload */
+#upload-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+}
+
+#upload-section label, #upload-section button {
+    display: block;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+#upload-section input[type="file"] {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+#upload-section button {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#upload-section button:hover {
+    background-color: #cc0000;
+}
