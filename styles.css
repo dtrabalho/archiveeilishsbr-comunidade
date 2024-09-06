@@ -21,20 +21,23 @@ body {
 }
 
 .panel-button {
-    background-color: #ff0000;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #BF0413; /* Cor do botão */
     border: none;
-    color: #ffffff;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    margin: 10px;
-    cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .panel-button:hover {
-    background-color: #cc0000;
+    background-color: #8C041D; /* Cor do botão ao passar o mouse */
 }
+
 
 .image-container {
     position: absolute;
